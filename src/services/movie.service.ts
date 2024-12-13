@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MovieService {
-  private apiUrl = 'http://localhost:5000/movies'; 
+  private apiUrl = 'https://back-movies-hmkv.onrender.com/movies'; 
 
   constructor(private http: HttpClient) {}
 
