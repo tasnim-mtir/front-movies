@@ -1496,7 +1496,7 @@ span.flatpickr-weekday {
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Poppins', sans-serif;
-  background: url("../images/show.jpg");
+  background-image: url('images/show.jpg');
   background-size: cover;
   background-position: center center;
   padding: 15px;
