@@ -1,0 +1,112 @@
+/* General Styling */
+#shell {
+  font-family: Arial, sans-serif;
+}
+/* Navbar Styling */
+#navbar {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky; /* Vous pouvez également utiliser 'fixed' si vous voulez qu'elle reste toujours visible */
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* S'assure que la barre de navigation occupe toute la largeur */
+  box-sizing: border-box; /* Permet d'inclure le padding dans la largeur totale */
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Assurez-vous que tout est bien étendu */
+  max-width: 1200px; /* Vous pouvez limiter la largeur si vous souhaitez qu'elle ne devienne pas trop large */
+  margin: 0 auto; /* Centrer le contenu lorsque la largeur est limitée */
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #e65c00;
+}
+
+.navbar-login {
+  margin-left: auto;
+}
+
+.login-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #555;
+}
+
+
+/* Main Content Styling */
+#main {
+  padding: 20px;
+}
+
+.movie-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.movie-image img {
+  width: 150px;
+  height: auto;
+  border-right: 1px solid #ddd;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-details h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}

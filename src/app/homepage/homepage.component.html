@@ -1,0 +1,67 @@
+<div class="s002">
+  <form (ngSubmit)="onSubmit()">
+    <fieldset>
+      <legend>Movies Recommendation</legend>
+    </fieldset>
+    <div class="inner-form">
+      <!-- Genre Selection -->
+      <div class="input-field first-wrap">
+        <div class="icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"></svg>
+        </div>
+        <select [(ngModel)]="preferences.genre" name="genre" class="custom-search">
+          <option value="" disabled selected>Category</option>
+          <option value="28">Action</option>
+          <option value="27">Horror</option>
+          <option value="35">Comedy</option>
+          <option value="12">Adventure</option>
+          <option value="99">Documentary</option>
+          <option value="18">Drama</option>
+          <option value="14">Fantasy</option>
+          <option value="80">Crime</option>
+          <option value="10749">Romance</option>
+          <option value="878">Science Fiction	</option>
+          <option value="10752">War</option>
+          <option value="37">Western</option>
+          <option value="53">Thriller</option>
+          <option value="16">Animation</option>
+          <option value="9648">Mystery</option>
+ 
+
+
+        </select>
+      </div>
+
+      <!-- Language Selection -->
+      <div class="input-field second-wrap">
+        <div class="icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"></svg>
+        </div>
+        <select [(ngModel)]="preferences.language" name="language" class="custom-search">
+          <option value="" disabled selected>Languages</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+
+      <!-- Year Input -->
+      <div class="input-field third-wrap">
+        <div class="icon-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"></svg>
+        </div>
+        <input
+          [(ngModel)]="preferences.year"
+          name="year"
+          class="hi-search"
+          type="text"
+          placeholder="Year"
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="input-field fifth-wrap">
+        <button class="btn-search" type="button" (click)="onSubmit()">SEARCH</button>
+      </div>
+    </div>
+  </form>
+</div>
