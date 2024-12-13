@@ -325,7 +325,7 @@ h1#logo a {
   }
   
   /* Make sure the movie cards are responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 0) {
 	.movie-card {
 	  width: 300px;
 	  margin: 20px 10px;
